@@ -16,7 +16,7 @@ export function Home() {
   };
 
   const startAsAgent = () => {
-    const newId = nanoid(10);
+    const newId = Math.random().toString().substring(2, 8);
     navigate(`/agent/${newId}`);
   };
 
